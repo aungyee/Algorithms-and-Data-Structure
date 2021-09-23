@@ -38,10 +38,10 @@
 #   this code is provided to help you understand how amortized constant append and pop could be implemented.
 
 
-a = __import__("Lecture 2 - Sequence and Array")
+from ArraySequence import ArraySeq
 
 
-class DynamicArraySeq(a.ArraySeq):
+class DynamicArraySeq(ArraySeq):
     def __init__(self, r = 2):                                                      # O(1)
         super().__init__()
         self.size = 0
