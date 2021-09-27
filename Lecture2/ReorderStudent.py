@@ -12,7 +12,7 @@ def reorder_students(L):
     for _ in range(n - 1):
         a = a.next
     b = a.next                      # relink next pointers of last half
-    x_p, x_p = a, b
+    x_p, x = a, b
     for _ in range(n):
         x_n = x.next
         x.next = x_p
