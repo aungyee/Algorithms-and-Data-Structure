@@ -77,7 +77,7 @@ class SortedArraySet:
             return self._binary_search(k, m + 1, j)
         return m
 
-    def find(self, k):
+    def find(self, k):                                              # O(log n)
         if len(self) == 0:
             return None
         i = self._binary_search(k, 0, len(self) - 1)
@@ -87,7 +87,7 @@ class SortedArraySet:
         else:
             return None
 
-    def find_next(self, k):
+    def find_next(self, k):                                         # O(log n)
         if len(self) == 0:
             return None
         i = self._binary_search(k, 0, len(self) - 1)
@@ -99,7 +99,7 @@ class SortedArraySet:
         else:
             return None
 
-    def find_prev(self, k):
+    def find_prev(self, k):                                         # O(log n)
         if len(self) == 0:
             return None
         i = self._binary_search(k, 0, len(self) - 1)
@@ -111,7 +111,7 @@ class SortedArraySet:
         else:
             return None
 
-    def insert(self, x):
+    def insert(self, x):                                            # O(n)
         if len(self) == 0:
             self.A.insert_first(x)
         else:
@@ -126,7 +126,7 @@ class SortedArraySet:
                 self.A.insert_at(i+ 1, x)
             return True
 
-    def delete(self, k):
+    def delete(self, k):                                            # O(n)
         if len(self) == 0:
             return None
         else:
