@@ -65,7 +65,7 @@ class BinarySearchTreeNode(BinaryNode):
 
 class SetBinarySearchTree(BinaryTree):
     def __init__(self):
-        super.__init__(nodeType = BinarySearchTreeNode)
+        super().__init__(nodeType = BinarySearchTreeNode)
 
     def iter_order(self):
         yield from self
