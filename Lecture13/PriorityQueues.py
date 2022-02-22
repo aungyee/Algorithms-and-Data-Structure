@@ -136,3 +136,9 @@ class HeapPriorityQueue:
             if key < self.A[idx].key:
                 self.A[idx].key = key
                 self.min_heapify_up(idx)
+
+# Fibonacci Heaps are not actually used very often in practice as it is more complex to implement,
+#   and results in larger constant factor overhead than the other two implementations described above.
+# When the number of edges in the graph is known to be at most linear (e.g., planar or bounded degree graphs)
+#   or at least quadratic (e.g. complete graphs) in the number of vertices,
+#   then using a binary heap or dictionary respectively will perform as well asymptotically as a Fibonacci Heap.
